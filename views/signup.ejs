@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <!--STYLES-->
+        <link rel="stylesheet" href="/styles/angular-toastr.css">
+        <link rel="stylesheet" href="/styles/app.css">
+        <link rel="stylesheet" href="/styles/foundation.css">
+        <link rel="stylesheet" href="/styles/importer.css">
+        <!--STYLES END-->
+    </head>
+    <body ng-app="SignupMod" ng-controller="SignupCtrl">
+        
+        <div class="large-4 large-centered columns">
+            <div class="signup-box">
+                <div class="row">
+                    <div class="large-12 columns">
+                        <h2 class="text-center">
+                         UserAuth
+                        </h2>
+                        <p>Please fill in the below fields</p>
+                        <form ng-submit="SignupSubmit()">
+                            <div class="row">
+                              <div class="large-12 columns">
+                                <input type="text" ng-model="name" ng-maxlength="40" name="name" placeholder="Name " required />  
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="large-12 columns">
+                                <input type="email" name="email" ng-model="email" placeholder="Email Address" required />  
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="large-12 columns">
+                                <input type="password" name="password" ng-maxlength="20" ng-model="password" placeholder="Password" required />  
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="large-12 columns">
+                                <input type="password" name="password2" ng-maxlength="20" ng-model="password2" placeholder="Confirm password" required />  
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="large-7 columns">
+                                <input type="submit" class="button expand" value="Create Account" />  
+                              </div>
+                                <div class="large-5 columns">
+                               <a class="button expand" href="/">Log in</a> 
+                              </div>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--SCRIPTS-->
+        <script src="/js/dependencies/sails.io.js"></script>
+        <script src="/js/dependencies/angular.js"></script>
+        <script src="/js/dependencies/jquery.js"></script>
+        <script src="/js/dependencies/angular-toastr.js"></script>
+        <script src="/js/dependencies/angular-toastr.tpls.js"></script>
+        <script src="/js/dependencies/foundation.js"></script>
+        <script src="/js/public/signup/signupMod.js"></script>
+        <script src="/js/public/signup/signupCtrl.js"></script>
+        <script src="/js/public/login/loginMod.js"></script>
+        <script src="/js/public/login/loginCtrl.js"></script>
+        <script src="/js/private/dashboard/dashMod.js"></script>
+        <script src="/js/private/dashboard/dashCtrl.js"></script>
+        <!--SCRIPTS END-->
+
+    </body>
+</html>

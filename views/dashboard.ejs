@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <!--STYLES-->
+        <link rel="stylesheet" href="/styles/angular-toastr.css">
+        <link rel="stylesheet" href="/styles/app.css">
+        <link rel="stylesheet" href="/styles/foundation.css">
+        <link rel="stylesheet" href="/styles/importer.css">
+        <!--STYLES END-->
+    </head>
+    <body ng-app="DashMod" ng-controller="DashCtrl" ng-init="getUser()">
+        <div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">Dashboard</li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      <li><input type="search" placeholder="Search"></li>
+      <li><a type="button" class="button" href="/logout">Logout</a></li>
+    </ul>
+  </div>
+</div>
+        <div class="container">
+            <div class="row">
+                <div class="large-2 columns">
+                  <img ng-src={{user.gravatarUrl}} />
+                </div>
+                <div class="large-10 columns">
+                    <li>Name : {{user.name}}</li>
+                    <li>Email : {{user.email}}</li>
+                    <li>CreatedOn : {{user.name}}</li>
+                </div>
+            </div>
+        </div>
+        
+        <!--SCRIPTS-->
+        <script src="/js/dependencies/sails.io.js"></script>
+        <script src="/js/dependencies/angular.js"></script>
+        <script src="/js/dependencies/jquery.js"></script>
+        <script src="/js/dependencies/angular-toastr.js"></script>
+        <script src="/js/dependencies/angular-toastr.tpls.js"></script>
+        <script src="/js/dependencies/foundation.js"></script>
+        <script src="/js/public/signup/signupMod.js"></script>
+        <script src="/js/public/signup/signupCtrl.js"></script>
+        <script src="/js/public/login/loginMod.js"></script>
+        <script src="/js/public/login/loginCtrl.js"></script>
+        <script src="/js/private/dashboard/dashMod.js"></script>
+        <script src="/js/private/dashboard/dashCtrl.js"></script>
+        <!--SCRIPTS END-->
+    </body>
+</html>

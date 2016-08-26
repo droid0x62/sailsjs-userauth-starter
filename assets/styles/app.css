@@ -1,0 +1,11 @@
+body{
+    background: ##D3D3D3 !important;
+}
+.login-box ,.signup-box{
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 100px 0;
+    padding: 40px 20px 0 20px; 
+    
+    
+}
